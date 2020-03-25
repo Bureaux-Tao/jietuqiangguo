@@ -49,14 +49,14 @@ class Pic extends StatelessWidget {
               ),
               Positioned(
                 left: (int.parse(general) >= 10000)
-                    ? 142.5
-                    : (int.parse(general) >= 1000) ? 148.5 : 157.5,
-                top: 125,
+                    ? 130
+                    : (int.parse(general) >= 1000) ? 140 : 152,
+                top: 122,
                 child: Text(general,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Color.fromARGB(255, 248, 243, 221),
-                      fontSize: 36,
+                      fontSize: 45,
                       decoration: TextDecoration.none,
                       decorationColor: Colors.transparent,
                       fontWeight: FontWeight.w300,
