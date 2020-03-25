@@ -49,13 +49,13 @@ class Pic extends StatelessWidget {
               ),
               Positioned(
                 left: (int.parse(general) >= 10000)
-                    ? 135
-                    : (int.parse(general) >= 1000) ? 145 : 155,
+                    ? 142.5
+                    : (int.parse(general) >= 1000) ? 148.5 : 157.5,
                 top: 125,
                 child: Text(general,
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 248, 243, 221),
                       fontSize: 36,
                       decoration: TextDecoration.none,
                       decorationColor: Colors.transparent,
@@ -68,8 +68,8 @@ class Pic extends StatelessWidget {
                 child: Text(convert(dw),
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 11.5,
+                      color: Color.fromARGB(255, 248, 243, 221),
+                      fontSize: 12.5,
                       decoration: TextDecoration.none,
                       decorationColor: Colors.transparent,
                       fontWeight: FontWeight.w300,
@@ -77,12 +77,12 @@ class Pic extends StatelessWidget {
               ),
               Positioned(
                 left: 319,
-                top: 330.2,
+                top: 331,
                 child: Text(today + "积分",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.redAccent,
-                        fontSize: 13.67,
+                        fontSize: 14,
                         decoration: TextDecoration.none,
                         decorationColor: Colors.transparent,
 //                        fontWeight: FontWeight.w100,
@@ -90,13 +90,13 @@ class Pic extends StatelessWidget {
               ),
               Positioned(left: 129, top: 192, child: row),
               Positioned(
-                left: 31.5,
-                top: 15.1,
+                left: 30,
+                top: 15,
                 child: Text(time,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 13.67,
+                      fontSize: 15.5,
                       decoration: TextDecoration.none,
                       fontWeight: FontWeight.bold,
                       decorationColor: Colors.transparent,

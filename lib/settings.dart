@@ -63,6 +63,7 @@ class _MainScreenState extends State<MainScreen> {
         theme: ThemeData(
           brightness: isDark ? Brightness.dark : Brightness.light,
         ),
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
           backgroundColor: isDark
               ? Color.fromARGB(255, 29, 29, 29)
@@ -87,10 +88,9 @@ class _MainScreenState extends State<MainScreen> {
                   removeTop: true,
                   context: context,
                   child: ListView.builder(
-                      padding: EdgeInsets.fromLTRB(0, 0, 0, 100),
                       physics: NeverScrollableScrollPhysics(),
                       shrinkWrap: true,
-                      itemCount: 2,
+                      itemCount: 1,
                       itemBuilder: (context, index) {
                         return mainContent();
                       }),
